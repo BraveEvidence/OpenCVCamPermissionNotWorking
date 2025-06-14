@@ -1,0 +1,2 @@
+ninja: Entering directory `/Users/transformhub/Downloads/mycam/MyAndroidProjectCameraCV/opencv/.cxx/Debug/4t2v5v2g/armeabi-v7a'
+ninja: no work to do.

@@ -1,0 +1,4 @@
+/Users/transformhub/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /Users/transformhub/Downloads/mycam/MyAndroidProjectCameraCV/opencv/.cxx/Debug/4t2v5v2g/armeabi-v7a \
+  opencv_jni_shared
