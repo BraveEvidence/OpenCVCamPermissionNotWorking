@@ -56,12 +56,12 @@ class MainActivity : CameraActivity(), CameraBridgeViewBase.CvCameraViewListener
         IntArray) {
         if (requestCode == REQUEST_CODE_PERMISSIONS) {
             if (allPermissionsGranted()) {
-                if(OpenCVLoader.initLocal()){
+
                     Toast.makeText(this, "Permissions granted by the user.", Toast.LENGTH_LONG).show()
                     cameraView.visibility = View.VISIBLE
                     cameraView.enableView()
                     cameraView.setCvCameraViewListener(this@MainActivity)
-                }
+
 
             }
         }
@@ -78,13 +78,15 @@ class MainActivity : CameraActivity(), CameraBridgeViewBase.CvCameraViewListener
 
         cameraView = findViewById(R.id.cameraView)
         button = findViewById(R.id.capture)
-
-
+        if(OpenCVLoader.initLocal()){
             ActivityCompat.requestPermissions(
                 this,
                 REQUIRED_PERMISSIONS,
                 REQUEST_CODE_PERMISSIONS
             )
+        }
+
+
 
 
         button.setOnClickListener {
